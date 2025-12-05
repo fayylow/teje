@@ -4,3 +4,5 @@ print("kepo lu ah : ")
 
 # lu dimana ja pai 
 # gua mau ngopi nih lu ikut apa ga?
+# laper gw
+# makan lah cimol lu mana
