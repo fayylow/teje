@@ -1,3 +1,6 @@
-print("rumah mu dimana : ")
-print("dirumah ada siapa : ")
-print("kepo lu ah : ")
+print("===== INVOICE PENJUALAN =====")
+
+no_invoice = input("Nomor Invoice: ")
+nama_pelanggan = input("Nama Pelanggan: ")
+
+print("\n--- Input Barang ---")
