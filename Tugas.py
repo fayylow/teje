@@ -43,7 +43,7 @@ for i in range (total):
     elif kode_barang[i] ==  "PRD-006" : 
         harga = 300000
         nama_produk = "Product F"
-        jumlah_harga.append(harga * jumlah_barang[i])
+        jumlah_harga.append(harga * jumlah_barang[i])  
     else : 
         harga = 0
         nama_produk = "Produk menghilang"
