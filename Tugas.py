@@ -15,7 +15,7 @@ print("1. |PRD-003 |Product C    |600.000")
 print("2. |PRD-004 |Product D    |500.000")
 print("3. |PRD-005 |Product E    |400.000")
 print("4. |PRD-006 |Product F    |300.000")
-print(" ")
+print("5. |PRD-007 |Product G    |200.000")
 total =int(input("Masukan total barang :"))
 
 kode_barang = []
