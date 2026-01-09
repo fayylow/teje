@@ -62,17 +62,18 @@ print("UP        : %-4s Term      : %-2s" % (nama_up, term))
 print("Alamat    : %-4s Gudang    : %-2s" % (nama_alamat, gudang))
 print("NO  | Kode     | Nama Barang   | Jumlah | Unit | Harga  | Disc | Sub Total | Pajak ")
 for i in range (total): 
-    print("%-4i| %-8s | %-13s | %-6i | %-4s | %-5d | %-4s | %-9i | %-5s" % (i+1, kode_barang[i], nama_produk, jumlah_barang[i], "pcs", harga, "0%", jumlah_harga[i], "10%"))
+    print("%-4i| %-8s | %-13s | %-6i | %-4s | %-5d | %-4s | %-9i | %-5s" % (i+1, kode_barang[i], nama_produk, jumlah_barang[i], "pcs", harga, "20%", jumlah_harga[i], "10%"))
 
 total = sum(jumlah_harga)
 pajak = total * 0.1
+discount = total * 0.2
 print(" ")
 print(" ")
 print(" ")
 print("-----------------------------------------------------------------------------------")
-print("Discount Final    : %63s" % ("0"))
+print("Discount Final    : %63s" % (discount))
 print("Pajak             : %63i" % (pajak))
 print("Biaya Pengantaran : %63s" % ("0"))
-print("Total             : Rp.%60i" % (total + pajak))
+print("Total             : Rp.%60i" % (total + pajak - discount))
 print("Dibayar           : Rp.%60s" % ("0"))
-print("Saldo             : Rp.%60i" % (total + pajak))
+print("Saldo             : Rp.%60i" % (total + pajak - discount))
